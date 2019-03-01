@@ -14,7 +14,7 @@ var drop;
 var clear;
 
 function preload(){
-//	img = createImg('style1.jpg');
+	img = createImg('style1.jpg').hide();
 	wave = loadImage('img/wave.jpg')
 	undine= loadImage('img/udnie.jpg')
 
@@ -55,11 +55,11 @@ clear.style('border-width','1px');
 }
 
 function restart(){
-
+img2.remove();
 // styleB.replace(transfer2,img2)
 styleB.removeChild(transfer2);
  styleA.removeChild(transfer1);
-	img2.remove();
+	
 
 }
 function input_file(){console.log("file coming")}
